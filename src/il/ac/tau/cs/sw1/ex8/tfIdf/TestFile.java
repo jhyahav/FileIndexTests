@@ -143,9 +143,8 @@ public class TestFile {
                 "die_verwandlung1.txt",
                 list.get(3).getKey()
             );
-            assertEquals(
-                    "die_verwandlung2.txt",
-                    list.get(1).getKey()
+            assertTrue(list.get(1).getKey().equals("die_verwandlung2.txt") ||
+                    list.get(1).getKey().equals("die_verwandlung3.txt")
             );
             assertEquals(
                     list.get(1).getValue(),
