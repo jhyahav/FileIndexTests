@@ -132,8 +132,9 @@ public class TestFile {
         );
     }
 
+    // Note that this also tests cosineSimilarity
     @Test
-    public void testClosestDocs() throws FileIndexException {
+    public void testClosestDocs() {
         this.index();
 
         assertDoesNotThrow(() -> {
